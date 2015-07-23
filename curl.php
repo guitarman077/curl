@@ -116,14 +116,15 @@ class Curl {
     }
 
     /**
-     * 
+     *
      */
-    public function __destruct() {
-        
+    public function __destruct()
+    {
+
         if (get_resource_type($this->curl) == 'Unknown') {
             return;
         }
-        
+
         $this->close();
     }
 }
