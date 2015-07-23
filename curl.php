@@ -89,7 +89,6 @@ class Curl {
     public function close()
     {
         curl_close($this->curl);
-        unset($this);
     }
 
     /**
@@ -114,5 +113,12 @@ class Curl {
         }
 
         return $return;
+    }
+
+    /**
+     * 
+     */
+    public function __destruct() {
+        $this->close();
     }
 }
