@@ -40,7 +40,7 @@ class Curl {
      */
     public function setOptCookieFile($cookie_file)
     {
-        return curl_setopt($this->curl, CURLOPT_COOKIEJAR, $cookie_file);
+        return curl_setopt($this->curl, CURLOPT_COOKIEFILE, $cookie_file);
     }
 
     /**
