@@ -71,7 +71,7 @@ class Curl {
      */
     public function setOptHeaderTrue()
     {
-        return curl_setopt($this->curl, CURLOPT_HTTPHEADER, true);
+        return curl_setopt($this->curl, CURLOPT_HEADER, true);
     }
 
     /**
@@ -79,7 +79,7 @@ class Curl {
      */
     public function setOptHeaderFalse()
     {
-        return curl_setopt($this->curl, CURLOPT_HTTPHEADER, false);
+        return curl_setopt($this->curl, CURLOPT_HEADER, false);
     }
     
     /**
