@@ -44,6 +44,15 @@ class Curl {
     }
 
     /**
+     * @param array $headers
+     * @return bool
+     */
+    public function setOptHTTPHeader(Array $headers)
+    {
+        return curl_setopt($this->curl, CURLOPT_HTTPHEADER, $headers);
+    }
+    
+    /**
      * @return bool
      */
     public function setOptPostTrue() {
