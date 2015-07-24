@@ -67,6 +67,22 @@ class Curl {
     }
 
     /**
+     * @return bool
+     */
+    public function setOptHeaderTrue()
+    {
+        return curl_setopt($this->curl, CURLOPT_HTTPHEADER, true);
+    }
+
+    /**
+     * @return bool
+     */
+    public function setOptHeaderFalse()
+    {
+        return curl_setopt($this->curl, CURLOPT_HTTPHEADER, false);
+    }
+    
+    /**
      * @param bool $value
      * @return bool
      */
@@ -122,6 +138,11 @@ class Curl {
         }
 
         return $return;
+    }
+
+    public function getInfo()
+    {
+        return curl_getinfo($this->curl);
     }
 
     /**
