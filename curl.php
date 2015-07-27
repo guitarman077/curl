@@ -140,6 +140,25 @@ class Curl {
         return $return;
     }
 
+    /**
+     * @return bool
+     */
+    public function setOptNobodyTrue()
+    {
+        return $this->setOpt(CURLOPT_NOBODY, true);
+    }
+
+    /**
+     * @return bool
+     */
+    public function setOptNobodyFalse()
+    {
+        return $this->setOpt(CURLOPT_NOBODY, false);
+    }
+    
+    /**
+     * @return mixed
+     */
     public function getInfo()
     {
         return curl_getinfo($this->curl);
