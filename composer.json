@@ -1,0 +1,19 @@
+{
+    "name": "guitarman077/gCurl",
+    "description": "My CURL lib",
+    "authors": [
+        {
+            "name": "Ilya Stepanov",
+            "email": "guitarman077@mail.ru"
+        }
+    ],
+    "include-path": [ "src/" ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "gCurl": "src/"
+        }
+    }
+}
