@@ -3,8 +3,7 @@
 /**
  * Class Curl
  * 
- * @author guitarman
- * @email guitarman077@mail.ru
+ * @author guitarman <guitarman077@mail.ru>
  */
 class gCurl {
 
