@@ -2,8 +2,11 @@
 
 /**
  * Class Curl
+ * 
+ * @author guitarman
+ * @email guitarman077@mail.ru
  */
-class Curl {
+class gCurl {
 
     private $curl;
 
